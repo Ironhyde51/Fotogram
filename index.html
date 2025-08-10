@@ -2,48 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotogram Galerie </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fotogram Galerie</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="min-h-screen flex items-center justify-center p-4">
-    <div class="w-full max-w-4xl">
-        <!-- Pip-Boy Frame -->
-        <div class="relative pipboy-screen rounded-lg overflow-hidden p-1">
+<body class="body-min-height flex-center p-4">
+    <div class="container max-width-4xl width-full">
+        <div class="pipboy-screen relative rounded overflow-hidden p-1">
             <div class="scanline"></div>
 
             <!-- Header -->
-
-            <div class="flex justify-between items-center p-2 border-b border-green-500 mb-2">
-                <div class="flex items-center text-2xl pipboy-text">
+            <div class="header flex-between align-center p-2 border-b border-green mb-2">
+                <div class="header-left flex-center text-2xl pipboy-text">
                     <div class="glitch-img" data-image="favicon.svg">
-                        <img src="favicon.svg" alt="Logo" class="header-logo">
+                        <img src="favicon.svg" alt="Logo" class="header-logo" />
                     </div>
                     <span class="glitch" data-text="FOTOGRAM-GALARIE">FOTOGRAM-GALARIE</span>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <div class="text-xs pipboy-text">STATUS: <span class="text-green-500">ONLINE</span></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+                <div class="status flex-center space-x-2 text-xs pipboy-text">
+                    STATUS: <span class="text-green">ONLINE</span>
+                    <div class="status-indicator pulse"></div>
                 </div>
             </div>
 
-
             <!-- Main Content -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 p-2">
-                <!-- Left Sidebar -->
-                <div class="md:col-span-1 space-y-2">
-                    <div class="pipboy-text text-lg mb-4">VAULT RESIDENT</div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-16 h-16 bg-green-900 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-3xl text-green-400"></i>
+            <div class="main-content grid grid-cols-1 md-grid-cols-4 gap-4 p-2">
+                <!-- Sidebar -->
+                <aside class="sidebar md-col-span-1 space-y-2">
+                    <div class="sidebar-title pipboy-text text-lg mb-4">VAULT RESIDENT</div>
+                    <div class="user-info flex-center space-x-2 mb-4">
+                        <div class="avatar green-bg rounded-full flex-center size-16">
+                            <i class="fas fa-user text-3xl text-green-light"></i>
                         </div>
                         <div>
                             <div class="text-sm">USERNAME</div>
@@ -51,210 +44,132 @@
                         </div>
                     </div>
 
-                    <div class="space-y-1">
-                        <div class="pipboy-button p-2 text-left flex items-center">
-                            <i class="fas fa-home mr-2"></i> Dashboard
+                    <nav class="nav space-y-1">
+                        <div class="pipboy-button flex-center p-2 text-left">
+                            <i class="fas fa-home icon-margin"></i> Dashboard
                         </div>
-                        <div class="pipboy-button p-2 text-left flex items-center">
-                            <i class="fas fa-gamepad mr-2"></i> Games
+                        <div class="pipboy-button flex-center p-2 text-left">
+                            <i class="fas fa-gamepad icon-margin"></i> Games
                         </div>
-                        <div class="pipboy-button p-2 text-left flex items-center">
-                            <i class="fas fa-trophy mr-2"></i> Achievements
+                        <div class="pipboy-button flex-center p-2 text-left">
+                            <i class="fas fa-trophy icon-margin"></i> Achievements
                         </div>
-                        <div class="pipboy-button p-2 text-left flex items-center">
-                            <i class="fas fa-users mr-2"></i> Social
+                        <div class="pipboy-button flex-center p-2 text-left">
+                            <i class="fas fa-users icon-margin"></i> Social
                         </div>
-                        <div class="pipboy-button p-2 text-left flex items-center">
-                            <i class="fas fa-cog mr-2"></i> Settings
+                        <div class="pipboy-button flex-center p-2 text-left">
+                            <i class="fas fa-cog icon-margin"></i> Settings
                         </div>
-                    </div>
+                    </nav>
 
-                    <div class="mt-4">
+                    <div class="vault-status mt-4">
                         <div class="text-sm mb-1">VAULT STATUS</div>
-                        <div class="h-2 bg-green-900 rounded-full">
-                            <div class="h-2 bg-green-500 rounded-full" style="width: 75%"></div>
+                        <div class="status-bar bg-green-dark rounded-full h-2">
+                            <div class="status-bar-fill bg-green rounded-full h-2" style="width: 75%;"></div>
                         </div>
                         <div class="text-xs mt-1">75% OPERATIONAL</div>
                     </div>
-                </div>
+                </aside>
 
                 <!-- Main Panel -->
-                <div class="md:col-span-3">
+                <main class="main-panel md-col-span-3">
                     <!-- Tabs -->
-                    <div class="flex border-b border-green-500 mb-4">
+                    <div class="tabs flex border-b border-green mb-4">
                         <div class="pipboy-tab active px-4 py-2 mr-1">GALARY</div>
                         <div class="pipboy-tab pipboy-button px-4 py-2 mr-1">NEWS</div>
                         <div class="pipboy-tab pipboy-button px-4 py-2 mr-1">STORY</div>
                         <div class="pipboy-tab pipboy-button px-4 py-2">RADIOACTIV</div>
                     </div>
 
-                    <!-- Featured Game -->
-                    <div class="mb-6">
+                    <!-- Featured -->
+                    <section class="featured mb-6">
                         <div class="text-xl mb-2">FEATURED GALARY</div>
-                        <div class="border border-green-500 p-2 flex flex-col md:flex-row">
-                            <div class="w-full md:w-1/3 bg-green-900 h-48 flex items-center justify-center">
-                                <i class="fas fa-radiation text-6xl text-green-400"></i>
+                        <div class="featured-container border border-green p-2 flex flex-col md-flex-row">
+                            <div class="featured-icon bg-green-dark h-48 flex-center md-width-1-3">
+                                <i class="fas fa-radiation text-6xl text-green-light"></i>
                             </div>
-                            <div class="w-full md:w-2/3 p-4">
+                            <div class="featured-info p-4 md-width-2-3">
                                 <div class="text-2xl mb-2">DEVELOPER AKADEMY: WASTELAND</div>
-                                <div class="text-sm mb-4">Willkommen, Mitschüler! Dein Auftrag: Überlebe in der
+                                <div class="text-sm mb-4">
+                                    Willkommen, Mitschüler! Dein Auftrag: Überlebe in der
                                     radioaktiven Code-Ödnis. Plündere alte Git-Repos, kämpfe gegen mutierte Bugs und
                                     patche Legacy-Systeme, bevor sie dich patchen. Level deine Pip-Boy-Skills in HTML,
                                     CSS und JavaScript – und vergiss nicht, regelmäßig Kaffee-Stimpaks einzunehmen.
                                 </div>
-                                <div class="flex justify-between items-center">
+                                <div class="featured-footer flex-between">
                                     <div class="text-xs">
-                                        <div>STATUS: <span class="text-green-500">INSTALLED</span></div>
+                                        <div>STATUS: <span class="text-green">INSTALLED</span></div>
                                         <div>LAST PLAYED: 2.7.2287</div>
                                     </div>
                                     <button class="pipboy-button px-4 py-1">PICTURE</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <!-- Game Library -->
-                    <div>
+                    <!-- Library -->
+                    <section class="library">
                         <div class="text-xl mb-2">YOUR LIBRARY</div>
-                        <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
-                            <!-- Game 1 -->
-                            <div class="border border-green-500 p-2">
-                                <div class="bg-green-900 h-24 mb-2 flex items-center justify-center">
-                                    <i class="fas fa-biohazard text-4xl text-green-400"></i>
+                        <div class="library-grid grid grid-cols-2 md-grid-cols-3 gap-2">
+                            <div class="game-item border border-green p-2">
+                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
+                                    <i class="fas fa-biohazard text-4xl text-green-light"></i>
                                 </div>
                                 <div class="text-sm">VAULT ESCAPE</div>
-                                <div class="text-xs text-green-400">ACTION</div>
+                                <div class="text-xs text-green-light">ACTION</div>
                             </div>
-
-                            <!-- Game 2 -->
-                            <div class="border border-green-500 p-2">
-                                <div class="bg-green-900 h-24 mb-2 flex items-center justify-center">
-                                    <i class="fas fa-robot text-4xl text-green-400"></i>
+                            <div class="game-item border border-green p-2">
+                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
+                                    <i class="fas fa-robot text-4xl text-green-light"></i>
                                 </div>
                                 <div class="text-sm">ROBCO WARS</div>
-                                <div class="text-xs text-green-400">STRATEGY</div>
+                                <div class="text-xs text-green-light">STRATEGY</div>
                             </div>
-
-                            <!-- Game 3 -->
-                            <div class="border border-green-500 p-2">
-                                <div class="bg-green-900 h-24 mb-2 flex items-center justify-center">
-                                    <i class="fas fa-car-crash text-4xl text-green-400"></i>
+                            <div class="game-item border border-green p-2">
+                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
+                                    <i class="fas fa-car-crash text-4xl text-green-light"></i>
                                 </div>
                                 <div class="text-sm">ROAD WARRIOR</div>
-                                <div class="text-xs text-green-400">RACING</div>
+                                <div class="text-xs text-green-light">RACING</div>
                             </div>
-
-                            <!-- Game 4 -->
-                            <div class="border border-green-500 p-2">
-                                <div class="bg-green-900 h-24 mb-2 flex items-center justify-center">
-                                    <i class="fas fa-dna text-4xl text-green-400"></i>
+                            <div class="game-item border border-green p-2">
+                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
+                                    <i class="fas fa-dna text-4xl text-green-light"></i>
                                 </div>
                                 <div class="text-sm">F.E.V. LABS</div>
-                                <div class="text-xs text-green-400">SIMULATION</div>
+                                <div class="text-xs text-green-light">SIMULATION</div>
                             </div>
-
-                            <!-- Game 5 -->
-                            <div class="border border-green-500 p-2">
-                                <div class="bg-green-900 h-24 mb-2 flex items-center justify-center">
-                                    <i class="fas fa-skull text-4xl text-green-400"></i>
+                            <div class="game-item border border-green p-2">
+                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
+                                    <i class="fas fa-skull text-4xl text-green-light"></i>
                                 </div>
                                 <div class="text-sm">DEATHCLAW HUNT</div>
-                                <div class="text-xs text-green-400">HORROR</div>
+                                <div class="text-xs text-green-light">HORROR</div>
                             </div>
-
-                            <!-- Game 6 -->
-                            <div class="border border-green-500 p-2">
-                                <div class="bg-green-900 h-24 mb-2 flex items-center justify-center">
-                                    <i class="fas fa-plus-square text-4xl text-green-400"></i>
+                            <div class="game-item border border-green p-2">
+                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
+                                    <i class="fas fa-plus-square text-4xl text-green-light"></i>
                                 </div>
                                 <div class="text-sm">MORE GAMES</div>
-                                <div class="text-xs text-green-400">BROWSE</div>
+                                <div class="text-xs text-green-light">BROWSE</div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </section>
+                </main>
             </div>
 
             <!-- Footer -->
-            <div class="flex justify-between items-center p-2 border-t border-green-500 mt-2 text-xs">
-                <div class="flex space-x-4">
+            <footer class="footer flex-between align-center p-2 border-t border-green mt-2 text-xs">
+                <div class="footer-left flex space-x-4">
                     <div>VERSION: 3.1.5</div>
                     <div>VAULT: 101</div>
                 </div>
-                <div class="flex items-center space-x-2 radio-active">
+                <div class="footer-center flex-center space-x-2 radio-active">
                     <i class="fas fa-broadcast-tower"></i>
                     <div>GALAXY NEWS RADIO</div>
                 </div>
                 <div>2287-07-02 19:45</div>
-            </div>
-
-            <!-- Dial Controls -->
-            <div class="absolute -right-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-2">
-                <button
-                    class="w-10 h-10 rounded-full border-2 border-green-500 bg-black flex items-center justify-center text-green-500">
-                    <i class="fas fa-chevron-up"></i>
-                </button>
-                <button
-                    class="w-10 h-10 rounded-full border-2 border-green-500 bg-black flex items-center justify-center text-green-500">
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <button
-                    class="w-10 h-10 rounded-full border-2 border-green-500 bg-black flex items-center justify-center text-green-500">
-                    <i class="fas fa-bolt"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Bottom Controls -->
-        <div class="flex justify-center mt-4 space-x-4">
-            <button class="pipboy-button w-12 h-12 rounded-full flex items-center justify-center">
-                <i class="fas fa-power-off"></i>
-            </button>
-            <button class="pipboy-button w-12 h-12 rounded-full flex items-center justify-center">
-                <i class="fas fa-lightbulb"></i>
-            </button>
-            <button class="pipboy-button w-12 h-12 rounded-full flex items-center justify-center">
-                <i class="fas fa-map-marked-alt"></i>
-            </button>
-            <button class="pipboy-button w-12 h-12 rounded-full flex items-center justify-center">
-                <i class="fas fa-database"></i>
-            </button>
-        </div>
-    </div>
-
-    <script>
-        // Simple tab functionality
-        document.querySelectorAll('.pipboy-tab').forEach(tab => {
-            tab.addEventListener('click', function () {
-                document.querySelector('.pipboy-tab.active').classList.remove('active');
-                this.classList.add('active');
-                // Here you would add code to switch content panels
-            });
-        });
-
-        // Glitch effect on hover for buttons
-        document.querySelectorAll('.pipboy-button').forEach(button => {
-            button.addEventListener('mouseenter', function () {
-                this.classList.add('glitch');
-                this.setAttribute('data-text', this.textContent.trim());
-            });
-
-            button.addEventListener('mouseleave', function () {
-                this.classList.remove('glitch');
-            });
-        });
-
-        // Simulate radio static
-        const radio = document.querySelector('.radio-active');
-        setInterval(() => {
-            if (Math.random() > 0.7) {
-                radio.style.animation = 'none';
-                setTimeout(() => {
-                    radio.style.animation = 'radio-active 0.5s infinite alternate';
-                }, 100);
-            }
-        }, 3000);
-    </script>
+            </footer>
 </body>
 
 </html>
