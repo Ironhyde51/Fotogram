@@ -36,16 +36,7 @@ document.querySelectorAll(
         });
     });
 
-    // Simulate radio static
-    const radio = document.querySelector('.radio-active');
-    setInterval(() => {
-        if (Math.random() > 0.7) {
-            radio.style.animation = 'none';
-            setTimeout(() => {
-                radio.style.animation = 'radio-active 0.5s infinite alternate';
-            }, 100);
-        }
-    }, 3000);
+
 
     // Cookie Bar Func
 
@@ -64,3 +55,32 @@ document.querySelectorAll(
             cookieBar.style.display = "none"
         });
     });
+
+    // search img
+
+const galleryImages = document.querySelectorAll('.pipboy-img');
+const dialog = document.getElementById('image-dialog');
+const dialogImg = document.getElementById('dialog-image');
+const btnPrev = document.getElementById('prev-btn');
+const btnNext = document.getElementById('next-btn');
+const btnClose = document.getElementById('close-btn');
+
+let currentIndex = 0;
+
+function showImage(index) {
+    if (index >= galleryImages.length) index = 0;
+    if (index < 0) index = galleryImages.length - 1;
+    currentIndex = index;
+    dialogImg.src = galleryImages[currentIndex].src;
+}
+
+galleryImages.forEach((img, index) => {
+    img.addEventListener('click', () => {
+        showImage(index);
+        dialog.showModal();
+    });
+});
+
+btnNext.addEventListener('click', () => showImage(currentIndex + 1));
+btnPrev.addEventListener('click', () => showImage(currentIndex - 1));
+btnClose.addEventListener('click', () => dialog.close());

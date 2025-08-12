@@ -557,7 +557,7 @@ body {
   justify-content: center;
   align-items: center;
   user-select: none;
-transition: background 0.2s ease;
+  transition: background 0.2s ease;
 }
 
 .dial-button:hover {
@@ -601,7 +601,7 @@ transition: background 0.2s ease;
 }
 
 .green-bg {
-  background-color: #9efc9e;
+  background-color: #3f7b3f
 }
 
 .text-green-light {
@@ -785,62 +785,121 @@ transition: background 0.2s ease;
   overflow: hidden;
   transition: background 0.2s ease;
   transition: max-height 0.3s ease;
-  margin-left: 1.5rem; /*
+  margin-left: 1.5rem;
+
 }
 
 .submenu a {
   display: block;
   padding-left: 0.5rem;
+  text-decoration: none;
 }
 
 .accordion-section.open .submenu {
-  max-height: 500px; /* genug für alle Links */
+  max-height: 500px;
+  /* genug für alle Links */
 }
 
 .submenu .pipboy-button {
-  padding-left: 2rem; /* eingerückt unter Social */
+  padding-left: 2rem;
+  /* eingerückt unter Social */
   font-size: 0.9rem;
 }
+
 /* cookie bar */
 .cookie-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #003b1f; 
-    color: #00ff88; 
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'VT323', monospace;
-    border-top: 2px solid #00ff88;
-    z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003b1f;
+  color: #00ff88;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'VT323', monospace;
+  border-top: 2px solid #00ff88;
+  z-index: 9999;
 }
 
 .cookie-bar p {
-    margin: 0;
-    font-size: 24px;
+  margin: 0;
+  font-size: 24px;
 }
 
 .cookie-bar a {
-    color: #00ff88;
-    text-decoration: underline;
+  color: #00ff88;
+  text-decoration: underline;
 }
 
 .cookie-bar button {
   height: 32px;
   width: 156px;
-    background: none;
-    border: 1px solid #00ff88;
-    color: #00ff88;
-    padding: 5px 15px;
-    cursor: pointer;
-    font-size: 11px;
-    transition: background 0.2s ease;
+  background: none;
+  border: 1px solid #00ff88;
+  color: #00ff88;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: background 0.2s ease;
 }
 
 .cookie-bar button:hover {
-    background: #00ff88;
-    color: #003b1f;
+  background: #00ff88;
+  color: #003b1f;
+}
+
+/* Dialog */
+.pipboy-dialog {
+    background: rgba(0, 20, 0, 0.9);
+    border: 2px solid #0f0;
+    padding: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    color: #0f0;
+}
+
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dialog-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#dialog-image {
+    max-width: 80vw;
+    max-height: 70vh;
+    border: 2px solid #0f0;
+}
+
+.nav-btn {
+    background: transparent;
+    color: #0f0;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    color: #9f9;
+}
+
+.dialog-close {
+    align-self: flex-end;
+    background: transparent;
+    border: none;
+    color: #0f0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dialog-close:hover {
+    color: #9f9;
 }
