@@ -1,4 +1,4 @@
-<script>
+
     // Simple tab functionality
     document.querySelectorAll('.pipboy-tab').forEach(tab => {
         tab.addEventListener('click', function () {
@@ -8,17 +8,20 @@
         });
     });
 
-    // Glitch effect on hover for buttons
-    document.querySelectorAll('.pipboy-button').forEach(button => {
-        button.addEventListener('mouseenter', function () {
-            this.classList.add('glitch');
-            this.setAttribute('data-text', this.textContent.trim());
-        });
-
-        button.addEventListener('mouseleave', function () {
-            this.classList.remove('glitch');
-        });
+    // Glitch effect für ALLE hoverbaren Pipboy-Elemente
+document.querySelectorAll(
+    '.pipboy-button, .pipboy-tab, .submenu a, .game-item, .settings-item'
+).forEach(el => {
+    el.addEventListener('mouseenter', function () {
+        this.classList.add('glitch');
+        this.setAttribute('data-text', this.textContent.trim());
     });
+
+    el.addEventListener('mouseleave', function () {
+        this.classList.remove('glitch');
+    });
+});
+
 
     // Accordion functionality for nav
     document.querySelectorAll('.accordion-toggle').forEach(toggle => {
@@ -43,4 +46,21 @@
             }, 100);
         }
     }, 3000);
-</script>
+
+    // Cookie Bar Func
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const cookieBar = document.getElementById("cookie-bar");
+        const acceptBtn = document.getElementById("cookie-accept");
+
+
+        if (!localStorage.getItem("cookiesAccepted")) {
+            cookieBar.style.display = "flex";
+        }
+
+
+        acceptBtn.addEventListener("click", () => {
+            localStorage.setItem("cookiesAccepted", "true");
+            cookieBar.style.display = "none"
+        });
+    });
