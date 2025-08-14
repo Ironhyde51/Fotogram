@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-        // Glitch Effekt nur auf Text-Elemente anwenden
+        // Glitch Effect 
         document.querySelectorAll(
             '.pipboy-tab, .pipboy-button, .submenu a'
         ).forEach(el => {
@@ -80,3 +80,14 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+
+    // Update footer date and time
+        (function() {
+          const now = new Date();
+          const pad = (n) => String(n).padStart(2, '0');
+          const footer = document.getElementById('datum-uhr');
+          if (footer) footer.textContent = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}`;
+          const stand = document.getElementById('stand-datum');
+          if (stand) stand.textContent = `${pad(now.getDate())}.${pad(now.getMonth()+1)}.${now.getFullYear()}`;
+        })();

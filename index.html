@@ -16,22 +16,25 @@
             <div class="scanline"></div>
 
             <!-- Header -->
-            <div class="header flex-between align-center p-2 border-b border-green mb-2">
-                <div class="header-left flex-center text-2xl pipboy-text">
-                    <div class="glitch-img" data-image="favicon.svg">
-                        <img src="favicon.svg" alt="Logo" class="header-logo" />
+            <header>
+                <div class="header flex-between align-center p-2 border-b border-green mb-2">
+                    <div class="header-left flex-center text-2xl pipboy-text">
+                        <div class="glitch-img" data-image="favicon.svg">
+                            <img src="favicon.svg" alt="Logo" class="header-logo" />
+                        </div>
+                        <span class="glitch" data-text="FOTOGRAM-GALARIE">
+                            FOTOGRAM-GALARIE
+                        </span>
                     </div>
-                    <span class="glitch" data-text="FOTOGRAM-GALARIE">
-                        FOTOGRAM-GALARIE
-                    </span>
+                    <div class="status flex-center space-x-2 text-xs pipboy-text">
+                        STATUS: <span class="text-green">ONLINE</span>
+                        <div class="status-indicator pulse"></div>
+                    </div>
                 </div>
-                <div class="status flex-center space-x-2 text-xs pipboy-text">
-                    STATUS: <span class="text-green">ONLINE</span>
-                    <div class="status-indicator pulse"></div>
-                </div>
-            </div>
+            </header>
 
             <!-- Main Content -->
+
             <div class="main-content grid grid-cols-1 md-grid-cols-4 gap-4 p-2">
                 <!-- Sidebar -->
                 <aside class="sidebar md-col-span-1 space-y-2">
@@ -46,75 +49,63 @@
                         </div>
                     </div>
 
-                    <nav class="nav space-y-1">
+                    <nav class="nav space-y-1" role="navigation" aria-label="Hauptmenü">
                         <div class="accordion-section">
                             <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
-                                data-text="DASHBOARD">
-                                <i class="fas fa-home icon-margin"></i> Dashboard
+                                data-text="DASHBOARD" aria-label="Zum Dashboard wechseln">
+                                <i class="fas fa-home icon-margin" aria-hidden="true"></i> Dashboard
                             </div>
                             <div class="submenu">
-                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="EVENTS">
-                                    <i class="fa-solid fa-calendar"></i> EVENTS
                                 </a>
-                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="NEWS">
-                                    <i class="fa-solid fa-comment"></i> NEWS
+                                <a href= ./impressum.html class="pipboy-button p-2 text-left glitch" data-text="IMPRESSUM">
+                                    <i class="fa-solid fa-stamp" aria-hidden="true"></i> IMPRESSUM
                                 </a>
-                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BENACHRICHTIGUNG">
-                                    <i class="fa-solid fa-bell"></i> BENACHRICHTIGUNG
+                                <a href=./datenschtz.html class="pipboy-button p-2 text-left glitch" data-text="DATENSCHUTZ">
+                                    <i class="fa-solid fa-scale-unbalanced-flip" aria-hidden="true"></i> DATENSCHUTZ
                                 </a>
-                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="SUPPORT">
-                                    <i class="fa-solid fa-person-drowning"></i> SUPPORT
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
+                                data-text="SOCIALS" aria-label="Zu den sozialen Medien wechseln">
+                                <i class="fas fa-users icon-margin" aria-hidden="true"></i> Socials
+                            </div>
+                            <div class="submenu">
+                                <a href="https://www.facebook.com/" target="_blank"
+                                    class="pipboy-button p-2 text-left glitch" data-text="FACEBOOK">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
                                 </a>
-                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="IMPRESSUM">
-                                    <i class="fa-solid fa-stamp"></i> IMPRESSUM
+                                <a href="https://www.instagram.com/" target="_blank"
+                                    class="pipboy-button p-2 text-left glitch" data-text="INSTAGRAM">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
                                 </a>
-                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="DATENSCHUTZ">
-                                    <i class="fa-solid fa-scale-unbalanced-flip"></i> DATENSCHUTZ
+                                <a href="https://x.com/?lang=de" target="_blank"
+                                    class="pipboy-button p-2 text-left glitch" data-text="X / TWITTER">
+                                    <i class="fab fa-x-twitter" aria-hidden="true"></i> X / Twitter
                                 </a>
                             </div>
                         </div>
 
                         <div class="accordion-section">
                             <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
-                                data-text="SOCIALS">
-                                <i class="fas fa-users icon-margin"></i> Socials
-                            </div>
-                            <div class="submenu">
-                                <a href="https://www.facebook.com/" class="pipboy-button p-2 text-left glitch"
-                                    data-text="FACEBOOK">
-                                    <i class="fab fa-facebook"></i> Facebook
-                                </a>
-                                <a href="https://www.instagram.com/" class="pipboy-button p-2 text-left glitch"
-                                    data-text="INSTAGRAM">
-                                    <i class="fab fa-instagram"></i> Instagram
-                                </a>
-                                <a href="https://x.com/?lang=de" class="pipboy-button p-2 text-left glitch"
-                                    data-text="X / TWITTER">
-                                    <i class="fab fa-x-twitter"></i> X / Twitter
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="accordion-section">
-                            <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
-                                data-text="SETTINGS">
-                                <i class="fas fa-cog icon-margin"></i> Settings
+                                data-text="SETTINGS" aria-label="Zu den Einstellungen wechseln">
+                                <i class="fas fa-cog icon-margin" aria-hidden="true"></i> Settings
                             </div>
                             <div class="submenu">
                                 <a href="#" class="pipboy-button p-2 text-left glitch" data-text="PROFIL ERSTELLEN">
-                                    <i class="fa-solid fa-house-user"></i> PROFIL ERSTELLEN
+                                    <i class="fa-solid fa-house-user" aria-hidden="true"></i> PROFIL ERSTELLEN
                                 </a>
                                 <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BENUTZERNAME">
-                                    <i class="fa-regular fa-user"></i> BENUTZERNAME
+                                    <i class="fa-regular fa-user"aria-hidden="true"></i> BENUTZERNAME
                                 </a>
                                 <a href="#" class="pipboy-button p-2 text-left glitch" data-text="PROFIL BEARBEITEN">
-                                    <i class="fa-solid fa-pen-ruler"></i> PROFIL BEARBEITEN
+                                    <i class="fa-solid fa-pen-ruler"aria-hidden="true"></i> PROFIL BEARBEITEN
                                 </a>
                                 <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BILDER UPLOAD">
-                                    <i class="fa-solid fa-arrow-up-long"></i> BILDER UPLOAD
+                                    <i class="fa-solid fa-arrow-up-long"aria-hidden="true"></i> BILDER UPLOAD
                                 </a>
                                 <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BILDER DOWNLOAD">
-                                    <i class="fa-solid fa-arrow-down-long"></i> BILDER DOWNLOAD
+                                    <i class="fa-solid fa-arrow-down-long"aria-hidden="true"></i> BILDER DOWNLOAD
                                 </a>
                             </div>
                         </div>
@@ -131,7 +122,7 @@
                 </aside>
 
                 <!-- Main Panel -->
-                <main class="main-panel md-col-span-3">
+                <main class="main-panel md-col-span-3" role="main" aria-label= "Galerie">
                     <!-- Tabs -->
                     <div class="tabs flex border-b border-green mb-4">
                         <div class="pipboy-tab active px-4 py-2 mr-1">GALARY</div>
@@ -139,7 +130,7 @@
                     </div>
 
                     <!-- Featured -->
-                    <section class="featured mb-6">
+                    <section class="featured mb-6" aria-labelledby="featured-title">
                         <div class="text-xl mb-2">FEATURED GALARY</div>
                         <div class="featured-container">
                             <div class="featured-icon">
@@ -164,10 +155,10 @@
                     </section>
 
                     <!-- Library -->
-                    <section class="library">
+                    <section class="library" aria-labelledby="library-title">
                         <div class="text-xl mb-2">YOUR LIBRARY</div>
                         <div class="library-grid grid grid-cols-2 md-grid-cols-3 gap-2">
-               
+
 
                             <div class="game-item border border-green p-2 pipboy-button" data-text="ACTION">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
@@ -284,19 +275,21 @@
             </div>
 
             <!-- Footer -->
-            <footer class="footer flex-between align-center p-2 border-t border-green mt-2 text-xs">
+            <footer class="footer flex-between align-center p-2 border-t border-green mt-2 text-xs" role="contentinfo">
                 <div class="footer-left flex space-x-4">
                     <div>VERSION: 3.1.5</div>
                     <div>VAULT: 101</div>
                 </div>
-                <div class="footer-center flex-center space-x-2 radio-active">
-                    <i class="fas fa-broadcast-tower"></i>
+                <div class="footer-center flex-center space-x-2 radio-active"
+                    aria-label="Aktueller Radiosender: GALAXY DA RADIO">
+                    <i class="fas fa-broadcast-tower" aria-hidden="true"></i>
                     <div>GALAXY DA RADIO</div>
                 </div>
                 <div>2287-07-02 19:45</div>
             </footer>
             <div id="cookie-bar" class="cookie-bar">
-                <p>Diese Website verwendet Cookies, um dein Erlebnis zu verbessern. <a href="#">Mehr erfahren</a></p>
+                <p>Diese Website verwendet Cookies, um dein Erlebnis zu verbessern. <a
+                        href="https://github.com/Ironhyde51" target="_blank">Mehr erfahren</a></p>
                 <button id="cookie-accept" class="pipboy-button">Cookies Akzeptieren</button>
             </div>
             <script src="javascript.js"></script>

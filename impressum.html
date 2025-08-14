@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Impressum • Fotogram Galerie</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="body-min-height flex-center p-4">
+  <div class="container max-width-4xl width-full">
+    <div class="pipboy-screen relative rounded overflow-hidden p-1">
+      <div class="scanline"></div>
+
+      <!-- Header -->
+      <header>
+        <div class="header flex-between align-center p-2 border-b border-green mb-2">
+          <div class="header-left flex-center text-2xl pipboy-text">
+            <div class="glitch-img" data-image="favicon.svg">
+              <img src="favicon.svg" alt="Logo" class="header-logo" />
+            </div>
+            <span class="glitch" data-text="FOTOGRAM-GALARIE">FOTOGRAM-GALARIE</span>
+          </div>
+          <div class="status flex-center space-x-2 text-xs pipboy-text">
+            STATUS: <span class="text-green">ONLINE</span>
+            <div class="status-indicator pulse"></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <div class="main-content grid grid-cols-1 md-grid-cols-4 gap-4 p-2">
+        <!-- Sidebar -->
+        <aside class="sidebar md-col-span-1 space-y-2">
+          <div class="sidebar-title pipboy-text text-lg mb-4">VAULT RESIDENT</div>
+          <div class="user-info flex-center space-x-2 mb-4">
+            <div class="avatar green-bg rounded-full flex-center size-16">
+              <i class="fas fa-user text-3xl text-green-light" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="text-sm">USERNAME</div>
+              <div class="text-xl">Guest</div>
+            </div>
+          </div>
+
+          <nav class="nav space-y-1" role="navigation" aria-label="Hauptmenü">
+            <div class="accordion-section">
+              <a class="pipboy-button flex-center p-2 text-left glitch" data-text="DASHBOARD" aria-label="Zum Dashboard wechseln" href="index.html">
+                <i class="fas fa-home icon-margin" aria-hidden="true"></i> Dashboard
+              </a>
+            </div>
+
+            <div class="accordion-section">
+              <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch" data-text="RECHTLICHES" aria-label="Rechtliches öffnen">
+                <i class="fa-solid fa-scale-unbalanced-flip icon-margin" aria-hidden="true"></i> Rechtliches
+              </div>
+              <div class="submenu">
+                <a href="./impressum.html" target="_blank" class="pipboy-button p-2 text-left glitch" data-text="IMPRESSUM">
+                  <i class="fa-solid fa-stamp" aria-hidden="true"></i> Impressum
+                </a>
+                <a href="./datenschtz.html" target="_blank" class="pipboy-button p-2 text-left glitch" data-text="DATENSCHUTZ">
+                  <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Datenschutz
+                </a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="vault-status mt-4">
+            <div class="text-sm mb-1"> GEIGER COUNTER</div>
+            <div class="status-bar bg-green-dark rounded-full h-2">
+              <div class="status-bar-fill bg-green rounded-full h-2" style="width: 75%;"></div>
+            </div>
+            <div class="text-xs mt-1">75% OPERATIONAL</div>
+          </div>
+        </aside>
+
+        <!-- Main Panel -->
+        <main class="main-panel md-col-span-3" role="main" aria-label="Impressum">
+          <div class="tabs flex border-b border-green mb-4">
+            <div class="pipboy-tab active px-4 py-2 mr-1">IMPRESSUM</div>
+          </div>
+
+          <!-- Impressum Content -->
+          <section class="featured mb-6" aria-labelledby="impressum-title">
+            <div class="text-xl mb-2" id="impressum-title">Angaben gemäß § 5 TMG</div>
+            <div class="featured-container">
+              <div class="featured-icon">
+                <img src="./Wasteland_Developer.png" alt="Vault Dev" class="featured-galary-img">
+              </div>
+              <div class="featured-info p-4 md-width-2-3">
+                <!-- === BEGINN: DATEN BITTE ANPASSEN === -->
+                <div class="text-sm mb-4">
+                  <strong>Betreiber der Website</strong><br/>
+                  <span class="pipboy-text">Renato Lüpnitz</span><br/>
+                  Franz-Stenzer-Straße 33<br/>
+                  12679 Berlin<br/>
+                  Deutschland
+                </div>
+
+                <div class="text-sm mb-4">
+                  <strong>Kontakt</strong><br/>
+                  Telefon: 0173/6258720<br/>
+                  E-Mail: <a href="mailto:[Renato13@gmx.net]" class="highlight-link">Renato13@gmx.net</a>
+                </div>
+
+                <div class="text-sm mb-4">
+                  <strong>Vertretungsberechtigte Person(en)</strong><br/>
+                  [Name der vertretungsberechtigten Person, z. B. Geschäftsführung]
+                </div>
+
+                <div class="text-sm mb-4">
+                  <strong>Registereintrag</strong><br/>
+                  Eintragung im Handelsregister.<br/>
+                  Registergericht: [Registergericht]<br/>
+                  Registernummer: [HRB/HRA-Nummer]
+                </div>
+
+                <div class="text-sm mb-4">
+                  <strong>Umsatzsteuer-ID</strong><br/>
+                  Umsatzsteuer-Identifikationsnummer gemäß § 27 a UStG: [DE123456789]
+                </div>
+
+                <div class="text-sm mb-4">
+                  <strong>Aufsichtsbehörde</strong><br/>
+                  [Name und Anschrift der zuständigen Aufsichtsbehörde, falls einschlägig]
+                </div>
+
+                <div class="text-sm mb-4">
+                  <strong>Berufsspezifische Angaben</strong><br/>
+                  [Nur falls reglementierter Beruf, z. B. Fotograf/in: Kammer, gesetzliche Berufsbezeichnung, Staat der Verleihung, berufsrechtliche Regelungen]
+                </div>
+
+                <div class="text-sm mb-4">
+                  <strong>EU-Streitschlichtung</strong><br/>
+                  Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" class="highlight-link" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>.
+                  Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                </div>
+
+                <div class="text-sm mb-4">
+                  <strong>Verbraucherstreitbeilegung/Universalschlichtungsstelle</strong><br/>
+                  Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                </div>
+
+                <div class="text-sm mb-4">
+                  <strong>Urheberrecht</strong><br/>
+                  Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                </div>
+
+                <div class="text-sm mb-4">
+                  <strong>Bildnachweise</strong><br/>
+                  icons von <a href="https://fontawesome.com/" class="highlight-link" target="_blank" rel="noopener">Font Awesome</a>.<br/>
+                 Eigenproduktionen: "Eigene Aufnahmen".
+                </div>
+                <!-- === ENDE: DATEN BITTE ANPASSEN === -->
+
+                <div class="featured-footer flex-between">
+                  <div class="text-xs">
+                    <div>STATUS: <span class="text-green">PUBLISHED</span></div>
+                    <div>Stand: <span id="stand-datum">—</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer flex-between align-center p-2 border-t border-green mt-2 text-xs" role="contentinfo">
+        <div class="footer-left flex space-x-4">
+          <div>VERSION: 3.1.5</div>
+          <div>VAULT: 101</div>
+        </div>
+        <div class="footer-center flex-center space-x-2 radio-active" aria-label="Aktueller Radiosender: GALAXY DA RADIO">
+          <i class="fas fa-broadcast-tower" aria-hidden="true"></i>
+          <div>GALAXY DA RADIO</div>
+        </div>
+        <div id="datum-uhr">2287-07-02 19:45</div>
+      </footer>
+
+      <div id="cookie-bar" class="cookie-bar">
+        <p>Diese Website verwendet Cookies, um dein Erlebnis zu verbessern. <a href="https://github.com/Ironhyde51" target="_blank" rel="noopener">Mehr erfahren</a></p>
+        <button id="cookie-accept" class="pipboy-button">Cookies Akzeptieren</button>
+      </div>
+      <script src="javascript.js"></script>
+    </div>
+  </div>
+</body>
+</html>
