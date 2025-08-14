@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fotogram Galerie</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,7 +20,7 @@
                 <div class="header flex-between align-center p-2 border-b border-green mb-2">
                     <div class="header-left flex-center text-2xl pipboy-text">
                         <div class="glitch-img" data-image="favicon.svg">
-                            <img src="favicon.svg" alt="Logo" class="header-logo" />
+                            <img src="./img/favicon.svg" alt="Logo" class="header-logo" />
                         </div>
                         <span class="glitch" data-text="FOTOGRAM-GALARIE">
                             FOTOGRAM-GALARIE
@@ -57,10 +57,12 @@
                             </div>
                             <div class="submenu">
                                 </a>
-                                <a href= ./impressum.html class="pipboy-button p-2 text-left glitch" data-text="IMPRESSUM">
+                                <a href=./impressum.html class="pipboy-button p-2 text-left glitch"
+                                    data-text="IMPRESSUM">
                                     <i class="fa-solid fa-stamp" aria-hidden="true"></i> IMPRESSUM
                                 </a>
-                                <a href=./datenschtz.html class="pipboy-button p-2 text-left glitch" data-text="DATENSCHUTZ">
+                                <a href=./datenschtz.html class="pipboy-button p-2 text-left glitch"
+                                    data-text="DATENSCHUTZ">
                                     <i class="fa-solid fa-scale-unbalanced-flip" aria-hidden="true"></i> DATENSCHUTZ
                                 </a>
                             </div>
@@ -96,16 +98,16 @@
                                     <i class="fa-solid fa-house-user" aria-hidden="true"></i> PROFIL ERSTELLEN
                                 </a>
                                 <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BENUTZERNAME">
-                                    <i class="fa-regular fa-user"aria-hidden="true"></i> BENUTZERNAME
+                                    <i class="fa-regular fa-user" aria-hidden="true"></i> BENUTZERNAME
                                 </a>
                                 <a href="#" class="pipboy-button p-2 text-left glitch" data-text="PROFIL BEARBEITEN">
-                                    <i class="fa-solid fa-pen-ruler"aria-hidden="true"></i> PROFIL BEARBEITEN
+                                    <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i> PROFIL BEARBEITEN
                                 </a>
                                 <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BILDER UPLOAD">
-                                    <i class="fa-solid fa-arrow-up-long"aria-hidden="true"></i> BILDER UPLOAD
+                                    <i class="fa-solid fa-arrow-up-long" aria-hidden="true"></i> BILDER UPLOAD
                                 </a>
                                 <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BILDER DOWNLOAD">
-                                    <i class="fa-solid fa-arrow-down-long"aria-hidden="true"></i> BILDER DOWNLOAD
+                                    <i class="fa-solid fa-arrow-down-long" aria-hidden="true"></i> BILDER DOWNLOAD
                                 </a>
                             </div>
                         </div>
@@ -122,7 +124,7 @@
                 </aside>
 
                 <!-- Main Panel -->
-                <main class="main-panel md-col-span-3" role="main" aria-label= "Galerie">
+                <main class="main-panel md-col-span-3" role="main" aria-label="Galerie">
                     <!-- Tabs -->
                     <div class="tabs flex border-b border-green mb-4">
                         <div class="pipboy-tab active px-4 py-2 mr-1">GALARY</div>
@@ -134,7 +136,8 @@
                         <div class="text-xl mb-2">FEATURED GALARY</div>
                         <div class="featured-container">
                             <div class="featured-icon">
-                                <img src="./Vault_Dev1.png" alt="Vault Dev" class="featured-galary-img">
+                                <img src="./img/Vault_Dev1.png" alt="Vault Dev" class="featured-galary-img"
+                                    onclick="openDialog(11)">
                             </div>
                             <div class="featured-info p-4 md-width-2-3">
                                 <div class="text-2xl mb-2">DEVELOPER AKADEMY: WASTELAND</div>
@@ -162,8 +165,8 @@
 
                             <div class="game-item border border-green p-2 pipboy-button" data-text="ACTION">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./Vault_Escape.png" alt="ESCAPE GAMES"
-                                        class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Vault_Escape.png" alt="ESCAPE GAMES"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(0)">
                                 </div>
                                 <div class="text-sm">VAULT ESCAPE</div>
                                 <div class="text-xs text-green-light">ACTION</div>
@@ -171,7 +174,8 @@
 
                             <div class="game-item border border-green p-2 pipboy-button" data-text="STRATEGY">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./Rob_COP.png" alt="STRATEGY" class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Rob_COP.png" alt="STRATEGY"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(1)">
                                 </div>
                                 <div class="text-sm">ROBCO WARS</div>
                                 <div class="text-xs text-green-light">STRATEGY</div>
@@ -179,8 +183,8 @@
 
                             <div class="game-item border border-green p-2 pipboy-button" data-text="RACING">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./Road_Warrior.png" alt="RACING"
-                                        class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Road_Warrior.png" alt="RACING"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(2)">
                                 </div>
                                 <div class="text-sm">ROAD WARRIOR</div>
                                 <div class="text-xs text-green-light">RACING</div>
@@ -188,8 +192,8 @@
 
                             <div class="game-item border border-green p-2 pipboy-button" data-text="SIMULATION">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./FEV_Labs.png" alt="SIMULATION"
-                                        class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/FEV_Labs.png" alt="SIMULATION"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(3)">
                                 </div>
                                 <div class="text-sm">F.E.V. LABS</div>
                                 <div class="text-xs">SIMULATION</div>
@@ -197,8 +201,8 @@
 
                             <div class="game-item pipboy-button" data-text="HORROR">
                                 <div class="game-icon">
-                                    <img src="./Deathclaw_Hunt.png" alt="HORROR"
-                                        class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Deathclaw_Hunt.png" alt="HORROR"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(4)">
                                 </div>
                                 <div class="text-sm">DEATHCLAW HUNT</div>
                                 <div class="text-xs text-green-light">HORROR</div>
@@ -206,8 +210,8 @@
 
                             <div class="game-item pipboy-button" data-text="PLATFORMING">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./Gouhl_Jump.png" alt="PLATFORMING"
-                                        class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Gouhl_Jump.png" alt="PLATFORMING"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(4)">
                                 </div>
                                 <div class="text-sm">GHOUL JUMP</div>
                                 <div class="text-xs text-green-light">PLATFORMING</div>
@@ -218,8 +222,8 @@
 
                             <div class="game-item border border-green p-2 pipboy-button" data-text="WASTELAND SPY">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./Shalter_spec.png" alt="WASTELAND SPY"
-                                        class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Shalter_spec.png" alt="WASTELAND SPY"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(5)">
                                 </div>
                                 <div class="text-sm">STELTH SPEC OPS</div>
                                 <div class="text-xs text-green-light">WASTELAND SPY</div>
@@ -227,8 +231,8 @@
 
                             <div class="game-item border border-green p-2 pipboy-button" data-text="DA CITY">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./Survival_Shalter.png" alt="DA CITY"
-                                        class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Survival_Shalter.png" alt="DA CITY"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(6)">
                                 </div>
                                 <div class="text-sm">SURVIAL SHELTER</div>
                                 <div class="text-xs text-green-light">DA CITY</div>
@@ -236,8 +240,8 @@
 
                             <div class="game-item border border-green p-2 pipboy-button" data-text="VAULT CHRONICLE">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./Wastland_Legend.png" alt="VAULT CHRONICLE"
-                                        class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Wastland_Legend.png" alt="VAULT CHRONICLE"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(7)">
                                 </div>
                                 <div class="text-sm">WASTELAND LEGENDS</div>
                                 <div class="text-xs text-green-light">VAULT CHRONICLE</div>
@@ -245,7 +249,8 @@
 
                             <div class="game-item border border-green p-2 pipboy-button" data-text="RPG">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./Atom_Born.png" alt="RPG" class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Atom_Born.png" alt="RPG" class="featured-galary-game-img pipboy-img"
+                                        onclick="openDialog(8)">
                                 </div>
                                 <div class="text-sm">ATOMBORN QUEST</div>
                                 <div class="text-xs">RPG</div>
@@ -253,8 +258,8 @@
 
                             <div class="game-item pipboy-button" data-text="SANDBOX">
                                 <div class="game-icon">
-                                    <img src="./Vault_Builder.png" alt="SANDBOX"
-                                        class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Vault_Builder.png" alt="SANDBOX"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(9)">
                                 </div>
                                 <div class="text-sm">VAULT BUILDER</div>
                                 <div class="text-xs text-green-light">SANDBOX</div>
@@ -262,8 +267,8 @@
 
                             <div class="game-item pipboy-button" data-text="FUTURISTIC">
                                 <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./Atomic_sifi.png" alt="FUTURISTIC"
-                                        class="featured-galary-game-img pipboy-img">
+                                    <img src="./img/Atomic_sifi.png" alt="FUTURISTIC"
+                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(10)">
                                 </div>
                                 <div class="text-sm">ATOMIC SCI-FI</div>
                                 <div class="text-xs text-green-light">FUTURISTIC</div>
@@ -293,14 +298,16 @@
                 <button id="cookie-accept" class="pipboy-button">Cookies Akzeptieren</button>
             </div>
             <script src="javascript.js"></script>
-            <!-- Galary Dialog -->
+            
+            <!-- Dialog -->
+            <div id="dialog-overlay" class="dialog-overlay" onclick="closeDialog()"></div>
             <dialog id="image-dialog" class="pipboy-dialog">
                 <div class="dialog-content">
-                    <button id="close-btn" class="dialog-close">✖</button>
+                    <button class="dialog-close" onclick="closeDialog()">✖</button>
                     <div class="dialog-image-wrapper">
-                        <button id="prev-btn" class="nav-btn">⟨</button>
+                        <button class="nav-btn" onclick="prevImage()">⟨</button>
                         <img id="dialog-image" src="" alt="">
-                        <button id="next-btn" class="nav-btn">⟩</button>
+                        <button class="nav-btn" onclick="nextImage()">⟩</button>
                     </div>
                 </div>
             </dialog>
