@@ -1,15 +1,18 @@
 
 // Accordion menu functionality
-document.querySelectorAll('.accordion-toggle').forEach(toggle => {
-    toggle.addEventListener('click', function () {
-        const parent = this.parentElement;
-        parent.classList.toggle('open');
-        const submenu = parent.querySelector('.submenu');
-        if (submenu) {
-            submenu.style.maxHeight = submenu.style.maxHeight ? null : submenu.scrollHeight + 'px';
+function toggleAccordion(element) {
+    let parent = element.parentElement;
+    parent.classList.toggle('open');
+
+    let submenu = parent.querySelector('.submenu');
+    if (submenu) {
+        if (submenu.style.maxHeight) {
+            submenu.style.maxHeight = null;
+        } else {
+            submenu.style.maxHeight = submenu.scrollHeight + "px";
         }
-    });
-});
+    }
+}
 
 // Image Gallery
 let currentIndex = 0;
