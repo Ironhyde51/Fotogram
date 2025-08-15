@@ -14,7 +14,7 @@ function toggleAccordion(element) {
     }
 }
 
-// Create an array (list) with all games and their information
+// Create an array (list) with all Images and their information
 const games = [
     { title: "VAULT ESCAPE", category: "ACTION", img: "./img/Vault_Escape.png", index: 0, green: true },
     { title: "ROBCO WARS", category: "STRATEGY", img: "./img/Rob_COP.png", index: 1, green: true },
@@ -29,16 +29,19 @@ const games = [
     { title: "VAULT BUILDER", category: "SANDBOX", img: "./img/Vault_Builder.png", index: 10, green: true },
     { title: "ATOMIC SCI-FI", category: "FUTURISTIC", img: "./img/Atomic_sifi.png", index: 11, green: true }
 ];
+
 // Find the HTML element where the games will be placed
 const libraryContainer = document.getElementById("library-container");
-// Loop through all games one by one
+
+// Loop through all Images one by one
 for (let i = 0; i < games.length; i++) {
     const game = games[i];
     let categoryClass = "text-xs";
     if (game.green) {
         categoryClass += " text-green-light";
     }
- // Add the game HTML to the library container
+    
+ // Add the Images HTML to the library container
     libraryContainer.innerHTML +=
         '<div class="game-item border border-green p-2 pipboy-button" data-text="' + game.category + '">' +
             '<div class="game-icon bg-green-dark h-24 mb-2 flex-center">' +
@@ -48,6 +51,7 @@ for (let i = 0; i < games.length; i++) {
             '<div class="' + categoryClass + '">' + game.category + '</div>' +
         '</div>';
 }
+
 // Image Gallery
 let currentIndex = 0;
 let images = document.querySelectorAll('.pipboy-img, .featured-galary-img');
