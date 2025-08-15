@@ -36,94 +36,97 @@
             <!-- Main Content -->
 
             <div class="main-content grid grid-cols-1 md-grid-cols-4 gap-4 p-2">
-               <!-- Accordion Sidebar -->
-<aside class="sidebar md-col-span-1 space-y-2">
-    <div class="sidebar-title pipboy-text text-lg mb-4">VAULT RESIDENT</div>
-    <div class="user-info flex-center space-x-2 mb-4">
-        <div class="avatar green-bg rounded-full flex-center size-16">
-            <i class="fas fa-user text-3xl text-green-light"></i>
-        </div>
-        <div>
-            <div class="text-sm">USERNAME</div>
-            <div class="text-xl">Guest</div>
-        </div>
-    </div>
+                <!-- Accordion Sidebar -->
+                <aside class="sidebar md-col-span-1 space-y-2">
+                    <div class="sidebar-title pipboy-text text-lg mb-4">VAULT RESIDENT</div>
+                    <div class="user-info flex-center space-x-2 mb-4">
+                        <div class="avatar green-bg rounded-full flex-center size-16">
+                            <i class="fas fa-user text-3xl text-green-light"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm">USERNAME</div>
+                            <div class="text-xl">Guest</div>
+                        </div>
+                    </div>
 
-    <nav class="nav space-y-1" role="navigation" aria-label="Hauptmenü">
-        <!-- Dashboard -->
-        <div class="accordion-section">
-            <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
-                data-text="DASHBOARD" onclick="toggleAccordion(this)" aria-label="Zum Dashboard wechseln">
-                <i class="fas fa-home icon-margin" aria-hidden="true"></i> Dashboard
-            </div>
-            <div class="submenu">
-                <a href="./impressum.html" class="pipboy-button p-2 text-left glitch"
-                    data-text="IMPRESSUM">
-                    <i class="fa-solid fa-stamp" aria-hidden="true"></i> IMPRESSUM
-                </a>
-                <a href="./datenschtz.html" class="pipboy-button p-2 text-left glitch"
-                    data-text="DATENSCHUTZ">
-                    <i class="fa-solid fa-scale-unbalanced-flip" aria-hidden="true"></i> DATENSCHUTZ
-                </a>
-            </div>
-        </div>
+                    <nav class="nav space-y-1" role="navigation" aria-label="Hauptmenü">
+                        <!-- Dashboard -->
+                        <div class="accordion-section">
+                            <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
+                                data-text="DASHBOARD" onclick="toggleAccordion(this)"
+                                aria-label="Zum Dashboard wechseln">
+                                <i class="fas fa-home icon-margin" aria-hidden="true"></i> Dashboard
+                            </div>
+                            <div class="submenu">
+                                <a href="./impressum.html" class="pipboy-button p-2 text-left glitch"
+                                    data-text="IMPRESSUM">
+                                    <i class="fa-solid fa-stamp" aria-hidden="true"></i> IMPRESSUM
+                                </a>
+                                <a href="./datenschtz.html" class="pipboy-button p-2 text-left glitch"
+                                    data-text="DATENSCHUTZ">
+                                    <i class="fa-solid fa-scale-unbalanced-flip" aria-hidden="true"></i> DATENSCHUTZ
+                                </a>
+                            </div>
+                        </div>
 
-        <!-- Socials -->
-        <div class="accordion-section">
-            <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
-                data-text="SOCIALS" onclick="toggleAccordion(this)" aria-label="Zu den sozialen Medien wechseln">
-                <i class="fas fa-users icon-margin" aria-hidden="true"></i> Socials
-            </div>
-            <div class="submenu">
-                <a href="https://www.facebook.com/" target="_blank"
-                    class="pipboy-button p-2 text-left glitch" data-text="FACEBOOK">
-                    <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
-                </a>
-                <a href="https://www.instagram.com/" target="_blank"
-                    class="pipboy-button p-2 text-left glitch" data-text="INSTAGRAM">
-                    <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
-                </a>
-                <a href="https://x.com/?lang=de" target="_blank"
-                    class="pipboy-button p-2 text-left glitch" data-text="X / TWITTER">
-                    <i class="fab fa-x-twitter" aria-hidden="true"></i> X / Twitter
-                </a>
-            </div>
-        </div>
+                        <!-- Socials -->
+                        <div class="accordion-section">
+                            <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
+                                data-text="SOCIALS" onclick="toggleAccordion(this)"
+                                aria-label="Zu den sozialen Medien wechseln">
+                                <i class="fas fa-users icon-margin" aria-hidden="true"></i> Socials
+                            </div>
+                            <div class="submenu">
+                                <a href="https://www.facebook.com/" target="_blank"
+                                    class="pipboy-button p-2 text-left glitch" data-text="FACEBOOK">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank"
+                                    class="pipboy-button p-2 text-left glitch" data-text="INSTAGRAM">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+                                </a>
+                                <a href="https://x.com/?lang=de" target="_blank"
+                                    class="pipboy-button p-2 text-left glitch" data-text="X / TWITTER">
+                                    <i class="fab fa-x-twitter" aria-hidden="true"></i> X / Twitter
+                                </a>
+                            </div>
+                        </div>
 
-        <!-- Settings -->
-        <div class="accordion-section">
-            <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
-                data-text="SETTINGS" onclick="toggleAccordion(this)" aria-label="Zu den Einstellungen wechseln">
-                <i class="fas fa-cog icon-margin" aria-hidden="true"></i> Settings
-            </div>
-            <div class="submenu">
-                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="PROFIL ERSTELLEN">
-                    <i class="fa-solid fa-house-user" aria-hidden="true"></i> PROFIL ERSTELLEN
-                </a>
-                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BENUTZERNAME">
-                    <i class="fa-regular fa-user" aria-hidden="true"></i> BENUTZERNAME
-                </a>
-                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="PROFIL BEARBEITEN">
-                    <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i> PROFIL BEARBEITEN
-                </a>
-                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BILDER UPLOAD">
-                    <i class="fa-solid fa-arrow-up-long" aria-hidden="true"></i> BILDER UPLOAD
-                </a>
-                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BILDER DOWNLOAD">
-                    <i class="fa-solid fa-arrow-down-long" aria-hidden="true"></i> BILDER DOWNLOAD
-                </a>
-            </div>
-        </div>
-    </nav>
+                        <!-- Settings -->
+                        <div class="accordion-section">
+                            <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
+                                data-text="SETTINGS" onclick="toggleAccordion(this)"
+                                aria-label="Zu den Einstellungen wechseln">
+                                <i class="fas fa-cog icon-margin" aria-hidden="true"></i> Settings
+                            </div>
+                            <div class="submenu">
+                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="PROFIL ERSTELLEN">
+                                    <i class="fa-solid fa-house-user" aria-hidden="true"></i> PROFIL ERSTELLEN
+                                </a>
+                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BENUTZERNAME">
+                                    <i class="fa-regular fa-user" aria-hidden="true"></i> BENUTZERNAME
+                                </a>
+                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="PROFIL BEARBEITEN">
+                                    <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i> PROFIL BEARBEITEN
+                                </a>
+                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BILDER UPLOAD">
+                                    <i class="fa-solid fa-arrow-up-long" aria-hidden="true"></i> BILDER UPLOAD
+                                </a>
+                                <a href="#" class="pipboy-button p-2 text-left glitch" data-text="BILDER DOWNLOAD">
+                                    <i class="fa-solid fa-arrow-down-long" aria-hidden="true"></i> BILDER DOWNLOAD
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
 
-    <div class="vault-status mt-4">
-        <div class="text-sm mb-1"> GEIGER COUNTER</div>
-        <div class="status-bar bg-green-dark rounded-full h-2">
-            <div class="status-bar-fill bg-green rounded-full h-2" style="width: 75%;"></div>
-        </div>
-        <div class="text-xs mt-1">75% OPERATIONAL</div>
-    </div>
-</aside>
+                    <div class="vault-status mt-4">
+                        <div class="text-sm mb-1"> GEIGER COUNTER</div>
+                        <div class="status-bar bg-green-dark rounded-full h-2">
+                            <div class="status-bar-fill bg-green rounded-full h-2" style="width: 75%;"></div>
+                        </div>
+                        <div class="text-xs mt-1">75% OPERATIONAL</div>
+                    </div>
+                </aside>
 
 
                 <!-- Main Panel -->
@@ -160,125 +163,12 @@
                         </div>
                     </section>
 
-                    <!-- Library -->
                     <section class="library" aria-labelledby="library-title">
                         <div class="text-xl mb-2">YOUR LIBRARY</div>
-                        <div class="library-grid grid grid-cols-2 md-grid-cols-3 gap-2">
-
-
-                            <div class="game-item border border-green p-2 pipboy-button" data-text="ACTION">
-                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./img/Vault_Escape.png" alt="ESCAPE GAMES"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(0)">
-                                </div>
-                                <div class="text-sm">VAULT ESCAPE</div>
-                                <div class="text-xs text-green-light">ACTION</div>
-                            </div>
-
-                            <div class="game-item border border-green p-2 pipboy-button" data-text="STRATEGY">
-                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./img/Rob_COP.png" alt="STRATEGY"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(1)">
-                                </div>
-                                <div class="text-sm">ROBCO WARS</div>
-                                <div class="text-xs text-green-light">STRATEGY</div>
-                            </div>
-
-                            <div class="game-item border border-green p-2 pipboy-button" data-text="RACING">
-                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./img/Road_Warrior.png" alt="RACING"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(2)">
-                                </div>
-                                <div class="text-sm">ROAD WARRIOR</div>
-                                <div class="text-xs text-green-light">RACING</div>
-                            </div>
-
-                            <div class="game-item border border-green p-2 pipboy-button" data-text="SIMULATION">
-                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./img/FEV_Labs.png" alt="SIMULATION"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(3)">
-                                </div>
-                                <div class="text-sm">F.E.V. LABS</div>
-                                <div class="text-xs">SIMULATION</div>
-                            </div>
-
-                            <div class="game-item pipboy-button" data-text="HORROR">
-                                <div class="game-icon">
-                                    <img src="./img/Deathclaw_Hunt.png" alt="HORROR"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(4)">
-                                </div>
-                                <div class="text-sm">DEATHCLAW HUNT</div>
-                                <div class="text-xs text-green-light">HORROR</div>
-                            </div>
-
-                            <div class="game-item pipboy-button" data-text="PLATFORMING">
-                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./img/Gouhl_Jump.png" alt="PLATFORMING"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(4)">
-                                </div>
-                                <div class="text-sm">GHOUL JUMP</div>
-                                <div class="text-xs text-green-light">PLATFORMING</div>
-                            </div>
-                        </div>
-
-                        <div class="library-grid grid grid-cols-2 md-grid-cols-3 gap-2">
-
-                            <div class="game-item border border-green p-2 pipboy-button" data-text="WASTELAND SPY">
-                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./img/Shalter_spec.png" alt="WASTELAND SPY"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(5)">
-                                </div>
-                                <div class="text-sm">STELTH SPEC OPS</div>
-                                <div class="text-xs text-green-light">WASTELAND SPY</div>
-                            </div>
-
-                            <div class="game-item border border-green p-2 pipboy-button" data-text="DA CITY">
-                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./img/Survival_Shalter.png" alt="DA CITY"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(6)">
-                                </div>
-                                <div class="text-sm">SURVIAL SHELTER</div>
-                                <div class="text-xs text-green-light">DA CITY</div>
-                            </div>
-
-                            <div class="game-item border border-green p-2 pipboy-button" data-text="VAULT CHRONICLE">
-                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./img/Wastland_Legend.png" alt="VAULT CHRONICLE"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(7)">
-                                </div>
-                                <div class="text-sm">WASTELAND LEGENDS</div>
-                                <div class="text-xs text-green-light">VAULT CHRONICLE</div>
-                            </div>
-
-                            <div class="game-item border border-green p-2 pipboy-button" data-text="RPG">
-                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./img/Atom_Born.png" alt="RPG" class="featured-galary-game-img pipboy-img"
-                                        onclick="openDialog(8)">
-                                </div>
-                                <div class="text-sm">ATOMBORN QUEST</div>
-                                <div class="text-xs">RPG</div>
-                            </div>
-
-                            <div class="game-item pipboy-button" data-text="SANDBOX">
-                                <div class="game-icon">
-                                    <img src="./img/Vault_Builder.png" alt="SANDBOX"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(9)">
-                                </div>
-                                <div class="text-sm">VAULT BUILDER</div>
-                                <div class="text-xs text-green-light">SANDBOX</div>
-                            </div>
-
-                            <div class="game-item pipboy-button" data-text="FUTURISTIC">
-                                <div class="game-icon bg-green-dark h-24 mb-2 flex-center">
-                                    <img src="./img/Atomic_sifi.png" alt="FUTURISTIC"
-                                        class="featured-galary-game-img pipboy-img" onclick="openDialog(10)">
-                                </div>
-                                <div class="text-sm">ATOMIC SCI-FI</div>
-                                <div class="text-xs text-green-light">FUTURISTIC</div>
-                            </div>
+                        <div id="library-container" class="library-grid grid grid-cols-2 md-grid-cols-3 gap-2">
+                            <!-- Imag from JS. -->
                         </div>
                     </section>
-
                 </main>
             </div>
 
@@ -295,7 +185,7 @@
                 </div>
                 <div>2287-07-02 19:45</div>
             </footer>
-            
+
             <!-- Cookie-Bar -->
             <div id="cookie-bar" class="cookie-bar">
                 <p>Diese Website verwendet Cookies, um dein Erlebnis zu verbessern. <a
@@ -303,7 +193,7 @@
                 <button id="cookie-accept" class="pipboy-button">Cookies Akzeptieren</button>
             </div>
             <script src="javascript.js"></script>
-            
+
             <!-- Dialog -->
             <div id="dialog-overlay" class="dialog-overlay" onclick="closeDialog()"></div>
             <dialog id="image-dialog" class="pipboy-dialog">
