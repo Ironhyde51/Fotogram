@@ -31,49 +31,51 @@
 
       <!-- Main Content -->
       <div class="main-content grid grid-cols-1 md-grid-cols-4 gap-4 p-2">
-        <!-- Sidebar -->
-        <aside class="sidebar md-col-span-1 space-y-2">
-          <div class="sidebar-title pipboy-text text-lg mb-4">VAULT RESIDENT</div>
-          <div class="user-info flex-center space-x-2 mb-4">
-            <div class="avatar green-bg rounded-full flex-center size-16">
-              <i class="fas fa-user text-3xl text-green-light" aria-hidden="true"></i>
-            </div>
-            <div>
-              <div class="text-sm">USERNAME</div>
-              <div class="text-xl">Guest</div>
-            </div>
-          </div>
+<aside class="sidebar md-col-span-1 space-y-2">
+  <div class="sidebar-title pipboy-text text-lg mb-4">VAULT RESIDENT</div>
+  <div class="user-info flex-center space-x-2 mb-4">
+    <div class="avatar green-bg rounded-full flex-center size-16">
+      <i class="fas fa-user text-3xl text-green-light" aria-hidden="true"></i>
+    </div>
+    <div>
+      <div class="text-sm">USERNAME</div>
+      <div class="text-xl">Guest</div>
+    </div>
+  </div>
 
-          <nav class="nav space-y-1" role="navigation" aria-label="Hauptmenü">
-            <div class="accordion-section">
-              <a class="pipboy-button flex-center p-2 text-left glitch" data-text="DASHBOARD" aria-label="Zum Dashboard wechseln" href="index.html">
-                <i class="fas fa-home icon-margin" aria-hidden="true"></i> Dashboard
-              </a>
-            </div>
+  <nav class="nav space-y-1" role="navigation" aria-label="Hauptmenü">
+    <div class="accordion-section">
+      <a class="pipboy-button flex-center p-2 text-left glitch" data-text="DASHBOARD"
+         aria-label="Zum Dashboard wechseln" href="index.html">
+        <i class="fas fa-home icon-margin" aria-hidden="true"></i> Dashboard
+      </a>
+    </div>
 
-            <div class="accordion-section">
-              <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch" data-text="RECHTLICHES" aria-label="Rechtliches öffnen">
-                <i class="fa-solid fa-scale-unbalanced-flip icon-margin" aria-hidden="true"></i> Rechtliches
-              </div>
-              <div class="submenu">
-                <a href="./impressum.html" target="_blank" class="pipboy-button p-2 text-left glitch" data-text="IMPRESSUM">
-                  <i class="fa-solid fa-stamp" aria-hidden="true"></i> Impressum
-                </a>
-                <a href="./datenschtz.html" target="_blank" class="pipboy-button p-2 text-left glitch" data-text="DATENSCHUTZ">
-                  <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Datenschutz
-                </a>
-              </div>
-            </div>
-          </nav>
+    <div class="accordion-section">
+      <button class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
+              data-text="RECHTLICHES" aria-label="Rechtliches öffnen" onclick="toggleAccordion(this)">
+        <i class="fa-solid fa-scale-unbalanced-flip icon-margin" aria-hidden="true"></i> Rechtliches
+      </button>
+      <div class="submenu">
+        <a href="./impressum.html" class="pipboy-button p-2 text-left glitch" data-text="IMPRESSUM">
+          <i class="fa-solid fa-stamp" aria-hidden="true"></i> Impressum
+        </a>
+        <a href="./datenschtz.html" class="pipboy-button p-2 text-left glitch" data-text="DATENSCHUTZ">
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Datenschutz
+        </a>
+      </div>
+    </div>
+  </nav>
 
-          <div class="vault-status mt-4">
-            <div class="text-sm mb-1"> GEIGER COUNTER</div>
-            <div class="status-bar bg-green-dark rounded-full h-2">
-              <div class="status-bar-fill bg-green rounded-full h-2" style="width: 75%;"></div>
-            </div>
-            <div class="text-xs mt-1">75% OPERATIONAL</div>
-          </div>
-        </aside>
+  <div class="vault-status mt-4">
+    <div class="text-sm mb-1"> GEIGER COUNTER</div>
+    <div class="status-bar bg-green-dark rounded-full h-2">
+      <div class="status-bar-fill bg-green rounded-full h-2" style="width: 75%;"></div>
+    </div>
+    <div class="text-xs mt-1">75% OPERATIONAL</div>
+  </div>
+</aside>
+
 
         <!-- Main Panel -->
         <main class="main-panel md-col-span-3" role="main" aria-label="Impressum">

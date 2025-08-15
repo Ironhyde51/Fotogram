@@ -46,47 +46,54 @@
                         </div>
                     </div>
 
-                    <nav class="nav space-y-1" role="navigation" aria-label="Hauptmenü">
-                        <div class="accordion-section">
-                            <a class="pipboy-button flex-center p-2 text-left glitch" href="index.html"
-                                data-text="DASHBOARD" aria-label="Zum Dashboard wechseln">
-                                <i class="fas fa-home icon-margin" aria-hidden="true"></i> Dashboard
-                            </a>
-                        </div>
+<nav class="nav space-y-1" role="navigation" aria-label="Hauptmenü">
+    <div class="accordion-section">
+        <a class="pipboy-button flex-center p-2 text-left glitch"
+           href="index.html"
+           data-text="DASHBOARD"
+           aria-label="Zum Dashboard wechseln">
+            <i class="fas fa-home icon-margin" aria-hidden="true"></i> Dashboard
+        </a>
+    </div>
 
-                        <div class="accordion-section">
-                            <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
-                                data-text="RECHTLICHES" aria-label="Rechtliches öffnen">
-                                <i class="fa-solid fa-scale-unbalanced-flip icon-margin" aria-hidden="true"></i>
-                                Rechtliches
-                            </div>
-                            <div class="submenu">
-                                <a href="impressum.html" class="pipboy-button p-2 text-left glitch"
-                                    data-text="IMPRESSUM">
-                                    <i class="fa-solid fa-stamp" aria-hidden="true"></i> Impressum
-                                </a>
-                                <a href="datenschutz.html" class="pipboy-button p-2 text-left glitch active"
-                                    data-text="DATENSCHUTZ">
-                                    <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Datenschutz
-                                </a>
-                            </div>
-                        </div>
-                    </nav>
+    <div class="accordion-section open"> <!-- 'open' sorgt dafür, dass es beim Laden schon aufgeklappt ist -->
+        <div class="pipboy-button flex-center p-2 text-left accordion-toggle glitch"
+             data-text="RECHTLICHES"
+             aria-label="Rechtliches öffnen"
+             onclick="toggleAccordion(this)">
+            <i class="fa-solid fa-scale-unbalanced-flip icon-margin" aria-hidden="true"></i>
+            Rechtliches
+        </div>
+        <div class="submenu" style="max-height: 200px;"> <!-- max-height gesetzt, damit es sichtbar ist -->
+            <a href="./impressum.html"
+               class="pipboy-button p-2 text-left glitch"
+               data-text="IMPRESSUM">
+                <i class="fa-solid fa-stamp" aria-hidden="true"></i> Impressum
+            </a>
+            <a href="./datenschtz.html"
+               class="pipboy-button p-2 text-left glitch active"
+               data-text="DATENSCHUTZ">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Datenschutz
+            </a>
+        </div>
+    </div>
+</nav>
 
-                    <div class="vault-status mt-4">
-                        <div class="text-sm mb-1"> GEIGER COUNTER</div>
-                        <div class="status-bar bg-green-dark rounded-full h-2">
-                            <div class="status-bar-fill bg-green rounded-full h-2" style="width: 75%;"></div>
-                        </div>
-                        <div class="text-xs mt-1">75% OPERATIONAL</div>
-                    </div>
-                </aside>
+<div class="vault-status mt-4">
+    <div class="text-sm mb-1"> GEIGER COUNTER</div>
+    <div class="status-bar bg-green-dark rounded-full h-2">
+        <div class="status-bar-fill bg-green rounded-full h-2" style="width: 75%;"></div>
+    </div>
+    <div class="text-xs mt-1">75% OPERATIONAL</div>
+</div>
+</aside>
 
-                <!-- Main Panel -->
-                <main class="main-panel md-col-span-3" role="main" aria-label="Datenschutzerklärung">
-                    <div class="tabs flex border-b border-green mb-4">
-                        <div class="pipboy-tab active px-4 py-2 mr-1">DATENSCHUTZ</div>
-                    </div>
+<!-- Main Panel -->
+<main class="main-panel md-col-span-3" role="main" aria-label="Datenschutzerklärung">
+    <div class="tabs flex border-b border-green mb-4">
+        <div class="pipboy-tab active px-4 py-2 mr-1">DATENSCHUTZ</div>
+    </div>
+
 
                     <!-- Datenschutz Content -->
                     <section class="featured mb-6" aria-labelledby="datenschutz-title">
