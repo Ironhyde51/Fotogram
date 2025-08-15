@@ -59,15 +59,15 @@ let images = document.querySelectorAll('.pipboy-img, .featured-galary-img');
 function openDialog(index) {
     currentIndex = index;
     document.getElementById('dialog-image').src = images[index].src;
-    document.getElementById('dialog-overlay').style.display = 'block';
     document.getElementById('image-dialog').showModal();
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden'; 
 }
+
 function closeDialog() {
-    document.getElementById('dialog-overlay').style.display = 'none';
     document.getElementById('image-dialog').close();
-    document.body.style.overflow = '';
+    document.body.style.overflow = ''; 
 }
+
 function nextImage() {
     currentIndex = (currentIndex + 1) % images.length;
     document.getElementById('dialog-image').src = images[currentIndex].src;

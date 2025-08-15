@@ -195,8 +195,7 @@
             <script src="javascript.js"></script>
 
             <!-- Dialog -->
-            <div id="dialog-overlay" class="dialog-overlay" onclick="closeDialog()"></div>
-            <dialog id="image-dialog" class="pipboy-dialog">
+            <dialog id="image-dialog" class="pipboy-dialog" onclick="if(event.target === this) closeDialog()">
                 <div class="dialog-content">
                     <button class="dialog-close" onclick="closeDialog()">✖</button>
                     <div class="dialog-image-wrapper">
@@ -206,6 +205,7 @@
                     </div>
                 </div>
             </dialog>
+
 
 </body>
 
