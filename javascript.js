@@ -25,30 +25,25 @@ function openDialog(index) {
     document.getElementById('image-dialog').showModal();
     document.body.style.overflow = 'hidden';
 }
-
 function closeDialog() {
     document.getElementById('dialog-overlay').style.display = 'none';
     document.getElementById('image-dialog').close();
     document.body.style.overflow = '';
 }
-
 function nextImage() {
     currentIndex = (currentIndex + 1) % images.length;
     document.getElementById('dialog-image').src = images[currentIndex].src;
 }
-
 function prevImage() {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     document.getElementById('dialog-image').src = images[currentIndex].src;
 }
 
-// Cookie Bar
-const cookieBar = document.getElementById("cookie-bar");
-const acceptBtn = document.getElementById("cookie-accept");
-if (!localStorage.getItem("cookiesAccepted")) {
-    cookieBar.style.display = "flex";
+// Cookie-Bar
+if (!localStorage.cookiesAccepted) {
+  document.getElementById("cookie-bar").style.display = "flex";
 }
-acceptBtn.addEventListener("click", () => {
-    localStorage.setItem("cookiesAccepted", "true");
-    cookieBar.style.display = "none"
-});
+document.getElementById("cookie-accept").onclick = function () {
+  localStorage.cookiesAccepted = "true";
+  document.getElementById("cookie-bar").style.display = "none";
+};
